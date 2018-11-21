@@ -11,10 +11,12 @@ namespace ConsoleApp6
         public static void Main(string[] args)
         {
 
-            Console.WriteLine(kingCheckcs.isKingCanMove(2,2,3,3));
+            Console.WriteLine(kingCheckcs.isKingCanMove(1,1,1,1));
+            Console.WriteLine(kingCheckcs.isKingCanMove(1,1,2,2));
+            Console.WriteLine(kingCheckcs.isKingCanMove(1,1,2,1));
             Console.WriteLine(kingCheckcs.isKingCanMove(3,3,1,1));
             Console.WriteLine(kingCheckcs.isKingCanMove(1,1,2,3));
-            Console.WriteLine(kingCheckcs.isKingCanMove(1,1,3,3));
+            Console.WriteLine(kingCheckcs.isKingCanMove(1,1,2,8));
             Console.ReadKey();
 
         }
