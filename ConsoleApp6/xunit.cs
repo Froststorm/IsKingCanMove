@@ -11,10 +11,10 @@ namespace ConsoleApp6
     public class Xunit
     {
         [Theory]
-        [InlineData(1, 1, 2, 2, "YES")]
-        [InlineData(1, 1, 2, 1, "YES")]
-        [InlineData(1, 1, 1, 1, "YES")]
-        [InlineData(1, 1, 3, 7, "NO")]
+        [InlineData(5, 5, 4, 3, "YES")]
+        [InlineData(5, 5, 3, 4, "YES")]
+        [InlineData(5, 5, 7, 4, "YES")]
+        [InlineData(1, 1, 7, 4, "NO")]
         [InlineData(1, 1, 3, 3, "NO")]
         [InlineData(1, 1, 2, 8, "NO")]
 
