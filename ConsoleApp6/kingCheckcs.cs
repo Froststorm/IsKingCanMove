@@ -19,14 +19,14 @@ namespace ConsoleApp6
             //int y2 = 2; // Convert.ToInt32(Console.ReadLine());
             int one = Math.Abs(x1 - x2);
             int two = Math.Abs(y1 - y2);
-            Console.WriteLine($"{one} {two}");
+            Console.WriteLine($"x = {one} y = {two}");
 
 
             bool isFirstOne = Math.Abs(x1 - x2) == 1;
             bool isSecondOne = Math.Abs(y1 - y2) == 1;
             bool result3 = isFirstOne && isSecondOne;
             bool result4 = (x1 == x2) && (y1 == y2);
-            Console.WriteLine($"res3 - {result3}, res4 - {result4}");
+            Console.WriteLine($"первый и второй единицы - {result3}, координаты те же - {result4}");
 
             string yesNo = result4 || result3 ? "YES" : "NO";
 
