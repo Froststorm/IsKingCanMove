@@ -1,24 +1,38 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace ConsoleApp6
+public class MainClass
 {
-    class Program
+    public static void Main()
     {
-        public static void Main(string[] args)
+
+        //int firstHalf = int.Parse(numstring.Substring(0, numstring.Length / 2));
+        //string secString = numstring.Substring(numstring.Length / 2, numstring.Length - numstring.Length / 2);
+        //int secHalf = int.Parse(ReverseString(secString));
+        while (true)
         {
+            string numstring = Console.ReadLine();
+            numstring = numstring.Length < 4  ? numstring + "0" : numstring;
+            int lenght = numstring.Length;
+            Console.WriteLine($"{lenght}");
 
-            Console.WriteLine(kingCheckcs.isKingCanMove(1,1,1,1));
-            Console.WriteLine(kingCheckcs.isKingCanMove(1,1,2,2));
-            Console.WriteLine(kingCheckcs.isKingCanMove(1,1,2,1));
-            Console.WriteLine(kingCheckcs.isKingCanMove(3,3,1,1));
-            Console.WriteLine(kingCheckcs.isKingCanMove(1,1,2,3));
-            Console.WriteLine(kingCheckcs.isKingCanMove(1,1,2,8));
-            Console.ReadKey();
+            int firstHalf = int.Parse(numstring.Substring(0, lenght));
+            string secString = numstring.Substring(0,lenght);
+            Console.WriteLine(secString);
+            int secHalf = int.Parse(ReverseString(secString));
 
+            Console.WriteLine($"{firstHalf} {secHalf}");
+
+            Console.WriteLine(firstHalf == secHalf ? "YES" : "NO"); 
         }
+
+        string ReverseString(string s)
+        {
+            char[] arr = s.ToCharArray();
+            Array.Reverse(arr);
+            return new string(arr);
+        }
+
+
+
     }
 }
